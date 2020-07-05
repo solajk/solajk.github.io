@@ -1,0 +1,37 @@
+$myFont: Helvetica, sans-serif;
+$myColor: rgb(1,51,1);
+$headingLargeFontSize: 60px;
+$headingMediumFontSize: 30px;
+
+$headingSmallFontSize: 30px;
+$introSmallFontSize: 20px;
+$smallFontSize: 16px;
+
+body {
+    font: {
+    family: $myFont;
+    size: 20px;
+    }
+    color: $myColor;
+}
+
+@media (max-width: 800px) {
+    body {font-size: $smallFontSize;
+    }
+    .title h1 {
+        font-size: $headingSmallFontSize;
+    }
+    .intro {
+        font-size: $introSmallFontSize;
+    }
+
+
+}
+
+.title h1 {
+    font-size: $headingLargeFontSize;
+}
+
+.intro {
+    font-size: $headingMediumFontSize;
+}
