@@ -1,11 +1,18 @@
 body {
     background-color:black;
 }
-div {
+.maindiv {
+    font-family:Arial;
     background-color:white;
+    border-radius: 25px;
+    padding: 75px;
+    margin: auto;
+}
+#form {
+    margin-left: 15%;
 }
 h1 {
-    font-family:Serif;
+    font-family:Verdana;
     color:grey;
 }
 
