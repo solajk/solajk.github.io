@@ -5,23 +5,20 @@ function compute() {
     var years = document.getElementById("years").value;
     //calculate interest with formula
     var interest = principal * years * rate / 100;
-    //display message with amounts
-    
-    
-};
-
-function convertYears(){
-    //get today's date with year
-    var curYear = new Date.getFullYear();
-    var years = document.getElementById("years").value;
-    //add number of years from user input
+    //convert years
+    var today = new Date;
+    var curYear = today.getFullYear();
     var finalYear = curYear + years;
-    return finalYear;
-};
-
+    //display message with amounts
+    var message = 'If you deposit '+principal+",";
+    console.log(interest)
+    document.getElementById("result").innerHTML = message; 
+       
+    
+}
 function displayRate(){
     var rate = document.getElementById("rate").value;
     document.getElementById("rate display").innerHTML = rate;
-};
+}
 
 
