@@ -11,8 +11,8 @@ body {
     padding: 20px;
     margin: auto;
 }
-#form {
-    margin-left: 15%;
+.yellow {
+    color: yellow;
 }
 h1 {
     font-family:Verdana;

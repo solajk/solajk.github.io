@@ -1,3 +1,9 @@
+function messageTemplate(principal, rate, year, finalYear) {
+    return `xxx 
+    <span class="yellow">${principal}hi</span>`
+}
+
+
 function compute() {
     //get values from user input
     var principal = document.getElementById("principal").value;
@@ -10,15 +16,13 @@ function compute() {
     var curYear = today.getFullYear();
     var finalYear = curYear + years;
     //display message with amounts
-    var message = 'If you deposit '+principal+",";
+    var message = 'If you deposit ' + principal + ",";
     console.log(interest)
-    document.getElementById("result").innerHTML = message; 
-       
-    
+    document.getElementById("result").innerHTML = messageTemplate(principal, rate, curYear, finalYear);
+
+
 }
-function displayRate(){
+function displayRate() {
     var rate = document.getElementById("rate").value;
     document.getElementById("rate display").innerHTML = rate;
 }
-
-
