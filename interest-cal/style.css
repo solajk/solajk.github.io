@@ -12,11 +12,12 @@ body {
     margin: auto;
 }
 .yellow {
-    color: yellow;
+    background-color: yellow;
 }
 h1 {
     font-family:Verdana;
     color:grey;
 }
+
 
 
